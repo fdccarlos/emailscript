@@ -1,0 +1,23 @@
+<script>
+
+if (window.navigator.geolocation) {
+	console.log(window.navigator.geolocation);
+	console.log(navigator.geolocation.getCurrentPosition(success, error, otions));
+} else
+{
+	console.log('Nope')
+}
+
+
+function success() {
+	console.log(position)
+}
+
+
+function error() {
+	console.log('error')
+}
+function otions() {
+	console.log('options')
+}
+</script>
